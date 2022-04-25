@@ -31,6 +31,7 @@ html {
 
 body {
   width: 100%;
+  overflow: hidden;
 }
 
 /* for the header */
@@ -45,6 +46,10 @@ header {
   position: sticky;
   top: 0;
 }
+
+.header-title {
+  text-decoration: none;
+} 
 
 .first-part-title {
   font-family: var(--font-secondary);
@@ -91,7 +96,9 @@ header {
 main {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   background: var(--color-main);
+  height: 85.3%;
 }
 
 .inset-menu {
@@ -148,4 +155,48 @@ main {
 .open {
   display: flex;
   flex-direction: column;
+}
+
+section {
+  height: 100%;
+  overflow: scroll;
+  flex-grow: 1;
+  scroll-behavior: smooth;
+}
+
+section::-webkit-scrollbar {
+  background: var(--color-main);
+}
+
+section::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+}
+
+/* for the footer */
+
+footer {
+  position: sticky;
+  bottom: 0;
+  background: var(--color-secondary);
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+footer nav a {
+  color: var(--color-main);
+  font-family: var(--font-main);
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+footer nav a:hover,
+footer nav a::after,
+footer nav a:focus,
+footer nav a:active {
+  color: var(--color-third);
+  cursor: pointer;
 }
