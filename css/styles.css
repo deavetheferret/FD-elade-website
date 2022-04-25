@@ -14,7 +14,7 @@
 :root {
   --color-main: #f8ffff;
   --color-secondary: #031115;
-  --color-third: #548995;
+  --color-third: #9eced9;
   --font-main: roc-grotesk, sans-serif;
   --font-secondary: roc-grotesk-wide, sans-serif;
   --page-title-size: 70px;
@@ -49,7 +49,12 @@ header {
 
 .header-title {
   text-decoration: none;
-} 
+}
+
+.header-title h1 span:hover,
+.header-title h1 span:active {
+  color: var(--color-third);
+}
 
 .first-part-title {
   font-family: var(--font-secondary);
@@ -120,7 +125,7 @@ main {
   border: solid 3px var(--color-third);
   padding: 20px;
   transition: box-shadow 0.3s;
-  margin: 10px 0;
+  margin: 4px 0;
 }
 
 .inset-menu a:hover,
@@ -141,6 +146,7 @@ main {
   color: var(--color-third);
   border: inset solid 2px var(--color-main);
   font-size: var(--little-title-size);
+  margin: 0;
 }
 
 .sub-nav a:hover,
@@ -157,16 +163,18 @@ main {
 }
 
 section {
-  height: 100%;
   overflow: scroll;
   flex-grow: 1;
   scroll-behavior: smooth;
   font-family: var(--font-main);
   color: var(--color-secondary);
+  padding: 40px 100px;
+  background: var(--color-main);
 }
 
 section::-webkit-scrollbar {
   background: var(--color-main);
+  border: solid 2px var(--color-secondary);
 }
 
 section::-webkit-scrollbar-thumb {
@@ -178,6 +186,17 @@ section h2 {
   font-weight: 600;
 }
 
+article h1 {
+  font-size: var(--sub-title-size);
+}
+
+article h2 {
+  font-size: var(--little-title-size);
+}
+
+article p {
+  font-size: var(--paragraph-size);
+}
 
 /* for the footer */
 
