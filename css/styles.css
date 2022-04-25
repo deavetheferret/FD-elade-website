@@ -12,9 +12,9 @@
  */
 
 :root {
-  --color-main: #fff;
-  --color-secondary: #000;
-  --color-third: #0055ff;
+  --color-main: #f8ffff;
+  --color-secondary: #031115;
+  --color-third: #548995;
   --font-main: roc-grotesk, sans-serif;
   --font-secondary: roc-grotesk-wide, sans-serif;
   --page-title-size: 70px;
@@ -104,42 +104,42 @@ main {
 .inset-menu {
   display: flex;
   flex-direction: column;
-  background: var(--color-main);
+  background: var(--color-third);
   padding: 20px;
-  justify-content: space-between;
-  height: 186px;
+  justify-content: flex-start;
+  height: 100%;
   position: sticky;
   top: 138.75px;
 }
 
 .inset-menu a {
-  color: var(--color-secondary);
+  color: var(--color-main);
   text-decoration: none;
   font-family: var(--font-main);
   font-size: var(--sub-title-size);
-  border: solid 3px var(--color-main);
+  border: solid 3px var(--color-third);
   padding: 20px;
   transition: box-shadow 0.3s;
+  margin: 10px 0;
 }
 
 .inset-menu a:hover,
 .inset-menu a::after,
 .inset-menu a:focus,
 .inset-menu a:active  {
-  color: var(--color-third);
-  border: solid 3px var(--color-third);
-  box-shadow: 8px 8px var(--color-third);
+  border: solid 3px var(--color-main);
+  box-shadow: 8px 8px var(--color-main);
 }
 
 .sub-nav {
   display: none;
-  background: var(--color-third);
+  background: var(--color-main);
   transition: all 0.3s;
 }
 
 .sub-nav a {
-  color: var(--color-main);
-  border: inset solid 2px var(--color-third);
+  color: var(--color-third);
+  border: inset solid 2px var(--color-main);
   font-size: var(--little-title-size);
 }
 
@@ -147,9 +147,8 @@ main {
 .sub-nav a::after,
 .sub-nav a:focus,
 .sub-nav a:active  {
-  color: var(--color-main);
   border: inset solid 2px var(--color-main);
-  box-shadow: 8px 0 var(--color-third);
+  box-shadow: 8px 0 var(--color-main);
 }
 
 .open {
@@ -162,6 +161,8 @@ section {
   overflow: scroll;
   flex-grow: 1;
   scroll-behavior: smooth;
+  font-family: var(--font-main);
+  color: var(--color-secondary);
 }
 
 section::-webkit-scrollbar {
@@ -171,6 +172,12 @@ section::-webkit-scrollbar {
 section::-webkit-scrollbar-thumb {
   background: var(--color-secondary);
 }
+
+section h2 {
+  font-size: var(--tiny-title-size);
+  font-weight: 600;
+}
+
 
 /* for the footer */
 
@@ -191,6 +198,7 @@ footer nav a {
   font-family: var(--font-main);
   text-decoration: none;
   margin: 0 20px;
+  transition: color 0.3s;
 }
 
 footer nav a:hover,
