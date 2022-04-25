@@ -38,6 +38,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
+  position: sticky;
+  top: 0;
 }
 
 .first-part-title {
@@ -86,4 +88,34 @@ main {
   display: flex;
   flex-direction: row;
   background: var(--color-main);
+}
+
+.inset-menu {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-main);
+  padding: 20px;
+  justify-content: space-between;
+  height: 500px;
+  position: sticky;
+  top: 138.75px;
+}
+
+.inset-menu a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-family: var(--font-main);
+  font-size: var(--sub-title-size);
+  border: solid 3px var(--color-main);
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.inset-menu a:hover,
+.inset-menu a::after,
+.inset-menu a:focus,
+.inset-menu a:active  {
+  color: var(--color-third);
+  border: solid 3px var(--color-third);
+  box-shadow: 8px 8px var(--color-third);
 }
