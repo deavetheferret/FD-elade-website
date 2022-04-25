@@ -20,13 +20,44 @@
   </header>
   <main>
     <nav class="inset-menu">
-      <a href="index.html">HOME</a>
-      <a href="pages/portfolio.html">PORTFOLIO</a>
-      <a href="pages/team.html">THE TEAM</a>
-      <a href="pages/contact.html">CONTACT US</a>
+      <a href="#top" onclick="SubNav()">OVERVIEW /</a>
+      <nav class="sub-nav" id="sub-nav">
+        <a href="#first-part-section">GRAPHIC DESIGN</a>
+        <a href="#second-part-section">FRONTEND DEVELOPPEMENT</a>
+      </nav>
+      <a href="#top">BACK TO THE TOP /</a>
     </nav>
-    <section>
-      <h2>GRAPHIC DESIGN - <span class="sample"></span></h2>
+    <section id="overview top">
+      <h2 id="first-part-section">GRAPHIC DESIGN - <span class="sample"></span></h2>
+      <article>
+        <h1>TYPOGRAPHIC AS GRAPHIC DESIGN</h1>
+        <h2>Made by François Devantay</h2>
+        <figure>
+          <img src="img/lettre-c.png" alt="le glyphe C">
+        </figure>
+        <p>
+          this workshop was a personal training for both developing my 
+          typographical eye and my skills on illustrator.
+          <br>
+          This project is also a kind of portfolio to understand the styles that
+          I master and also allow you to have a quick overview of my work.
+        </p>
+      </article>
+      <article>
+        <h1>TYPOGRAPHIC AS GRAPHIC DESIGN</h1>
+        <h2>Made by François Devantay</h2>
+        <figure>
+          <img src="img/lettre-c.png" alt="le glyphe C">
+        </figure>
+        <p>
+          this workshop was a personal training for both developing my 
+          typographical eye and my skills on illustrator.
+          <br>
+          This project is also a kind of portfolio to understand the styles that
+          I master and also allow you to have a quick overview of my work.
+        </p>
+      </article>
+      <h2 id="second-part-section">FRONTEND DEVELOPPEMENT - <span class="sample"></span></h2>
       <article>
         <h1>TYPOGRAPHIC AS GRAPHIC DESIGN</h1>
         <h2>Made by François Devantay</h2>
@@ -65,7 +96,7 @@
         <a href="pages/team.html">THE TEAM</a>
         <a href="pages/contact.html">CONTACT US</a>
       </nav>
-      <nav>
+      <nav id="bottom">
         <a href="mailto:francois.devantay@studentfr.ch">E-mail</a>
         <a href="tel:+41794529483">Telephone</a>
         <a href="https://github.com/deavetheferret">Git-Hub</a>
