@@ -2,3 +2,27 @@
   margin: 0;
   padding: 0;
 }
+
+@import url("https://use.typekit.net/iox7jtf.css");
+
+roc-grotesk, sans-serif
+roc-grotesk-compressed, sans-serif
+roc-grotesk-condensed, sans-serif
+roc-grotesk-wide, sans-serif
+roc-grotesk-extrawide, sans-serif
+
+:root {
+  --color-main: #fff;
+  --color-secondary: #000;
+  --color-third: #0055ff;
+  --font-main: roc-grotesk, sans-serif;
+  --font-secondary: ;
+  --page-title-size: ;
+  --tiny-title-size: ;
+  --h3-size: ;
+  --h4-size: ;
+  --h5-size: ;
+  --h6-size: ;
+  --paragraph-size: ;
+  --legend-size: ;
+}
