@@ -12,9 +12,9 @@
  */
 
 :root {
-  --color-main: #f8ffff;
-  --color-secondary: #031115;
-  --color-third: #9eced9;
+  --color-main: #fff8f8;
+  --color-secondary: #150303;
+  --color-third: #be4545;
   --font-main: roc-grotesk, sans-serif;
   --font-secondary: roc-grotesk-wide, sans-serif;
   --page-title-size: 70px;
@@ -51,23 +51,27 @@ header {
   text-decoration: none;
 }
 
-.header-title h1 span:hover,
-.header-title h1 span:active {
+.brand-title:hover,
+.brand-title:active,
+.department-title:hover,
+.department-title:active {
   color: var(--color-third);
 }
 
-.first-part-title {
+.brand-title {
   font-family: var(--font-secondary);
   font-size: var(--page-title-size);
   color: var(--color-main);
   font-weight: 600;
+  transition: color 0.3s;
 }
 
-.rest-part-title {
+.department-title {
   font-weight:300;
   font-family: var(--font-main);
   font-size: var(--tiny-title-size);
   color: var(--color-main);
+  transition: color 0.3s;
 }
 
 .menu {
