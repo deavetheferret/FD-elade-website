@@ -25,6 +25,10 @@
   --legend-size: 8px;
 }
 
+body {
+  width: 100%;
+}
+
 header {
   background: var(--color-secondary);
   display: flex;
@@ -51,10 +55,25 @@ header {
 .menu {
   display: flex;
   justify-content: space-between;
+  width: 50%;
 }
 
 .menu a {
   color: #fff;
+  padding: 15px 38px;
   font-family: var(--font-main);
   text-decoration: none;
+  font-size: var(--little-title-size);
+  border: solid 2px var(--color-secondary);
+  transition: box-shadow 0.3s;
+}
+
+.menu a:hover,
+.menu a:active,
+.menu a::after,
+.menu a:focus {
+  color: var(--color-main);
+  background: var(--color-secondary);
+  border: solid 2px var(--color-main);
+  box-shadow: 8px 8px var(--color-main);
 }
