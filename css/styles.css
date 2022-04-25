@@ -3,26 +3,58 @@
   padding: 0;
 }
 
-@import url("https://use.typekit.net/iox7jtf.css");
-
-roc-grotesk, sans-serif
-roc-grotesk-compressed, sans-serif
-roc-grotesk-condensed, sans-serif
-roc-grotesk-wide, sans-serif
-roc-grotesk-extrawide, sans-serif
+/*
+  roc-grotesk, sans-serif
+  roc-grotesk-compressed, sans-serif
+  roc-grotesk-condensed, sans-serif
+  roc-grotesk-wide, sans-serif
+  roc-grotesk-extrawide, sans-serif
+ */
 
 :root {
   --color-main: #fff;
   --color-secondary: #000;
   --color-third: #0055ff;
   --font-main: roc-grotesk, sans-serif;
-  --font-secondary: ;
-  --page-title-size: ;
-  --tiny-title-size: ;
-  --h3-size: ;
-  --h4-size: ;
-  --h5-size: ;
-  --h6-size: ;
-  --paragraph-size: ;
-  --legend-size: ;
+  --font-secondary: roc-grotesk-wide, sans-serif;
+  --page-title-size: 70px;
+  --tiny-title-size: 50px;
+  --sub-title-size: 30px;
+  --little-title-size: 25px;
+  --paragraph-size: 18px;
+  --legend-size: 8px;
+}
+
+header {
+  background: var(--color-secondary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.first-part-title {
+  font-family: var(--font-secondary);
+  font-size: var(--page-title-size);
+  color: var(--color-main);
+  font-weight: 600;
+}
+
+.rest-part-title {
+  font-weight:300;
+  font-family: var(--font-main);
+  font-size: var(--tiny-title-size);
+  color: var(--color-main);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu a {
+  color: #fff;
+  font-family: var(--font-main);
+  text-decoration: none;
 }
