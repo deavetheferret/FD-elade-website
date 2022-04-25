@@ -25,6 +25,10 @@
   --legend-size: 8px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
 }
@@ -96,7 +100,7 @@ main {
   background: var(--color-main);
   padding: 20px;
   justify-content: space-between;
-  height: 500px;
+  height: 186px;
   position: sticky;
   top: 138.75px;
 }
@@ -118,4 +122,30 @@ main {
   color: var(--color-third);
   border: solid 3px var(--color-third);
   box-shadow: 8px 8px var(--color-third);
+}
+
+.sub-nav {
+  display: none;
+  background: var(--color-third);
+  transition: all 0.3s;
+}
+
+.sub-nav a {
+  color: var(--color-main);
+  border: inset solid 2px var(--color-third);
+  font-size: var(--little-title-size);
+}
+
+.sub-nav a:hover,
+.sub-nav a::after,
+.sub-nav a:focus,
+.sub-nav a:active  {
+  color: var(--color-main);
+  border: inset solid 2px var(--color-main);
+  box-shadow: 8px 0 var(--color-third);
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
 }
