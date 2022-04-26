@@ -151,6 +151,7 @@ main {
   border: inset solid 2px var(--color-main);
   font-size: var(--little-title-size);
   margin: 0;
+  transition: 0.3s;
 }
 
 .sub-nav a:hover,
@@ -192,14 +193,38 @@ section h2 {
 
 article h1 {
   font-size: var(--sub-title-size);
+  margin: 0 0 10px;
 }
 
 article h2 {
   font-size: var(--little-title-size);
+  margin: 0 0 10px;
 }
 
 article p {
   font-size: var(--paragraph-size);
+  margin: 0 0 10px;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 30px;
+}
+
+article img {
+  width: 30%;
+  height: fit-content;
+  margin: 0 20px 0 0;
+}
+
+article div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 /* for the footer */
