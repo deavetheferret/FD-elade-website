@@ -107,7 +107,7 @@ main {
   flex-direction: row;
   justify-content: flex-start;
   background: var(--color-main);
-  height: 85.3%;
+  height: 85.6%;
 }
 
 .inset-menu {
@@ -175,6 +175,9 @@ section {
   color: var(--color-secondary);
   padding: 40px 100px;
   background: var(--color-main);
+  width: 60%;
+  border: solid 3px var(--color-secondary);
+  box-sizing: border-box;
 }
 
 section::-webkit-scrollbar {
@@ -189,6 +192,10 @@ section::-webkit-scrollbar-thumb {
 section h2 {
   font-size: var(--tiny-title-size);
   font-weight: 600;
+  background: var(--color-secondary);
+  color: var(--color-main);
+  margin: 0 0 20px;
+  padding: 0 20px;
 }
 
 article h1 {
@@ -199,6 +206,8 @@ article h1 {
 article h2 {
   font-size: var(--little-title-size);
   margin: 0 0 10px;
+  background: var(--color-main);
+  color: var(--color-secondary);
 }
 
 article p {
@@ -211,6 +220,8 @@ article {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 0 30px;
+  border: solid 3px var(--color-secondary);
+  box-sizing: border-box;
 }
 
 article img {
