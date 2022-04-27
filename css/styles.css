@@ -189,6 +189,32 @@ section::-webkit-scrollbar-thumb {
   background: var(--color-secondary);
 }
 
+.card {
+  padding: 100px 40px;
+  text-align: center;
+  font-size: var(--tiny-title-size);
+}
+
+.card-sample-base {
+  font-family: var(--font-secondary);
+  font-size: var(--page-title-size);
+  color: var(--color-main);
+  font-weight: 600;
+}
+
+.card-sample-department {
+  font-weight:300;
+  font-family: var(--font-main);
+  font-size: var(--tiny-title-size);
+  color: var(--color-main);
+  animation-name: colorfulltitle;
+  animation-duration: 10s;
+}
+
+@keyframes colorfulltitle {
+  0%
+}
+
 section h2 {
   font-size: var(--tiny-title-size);
   font-weight: 600;
