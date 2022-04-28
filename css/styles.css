@@ -208,11 +208,23 @@ section::-webkit-scrollbar-thumb {
   font-size: var(--tiny-title-size);
   color: var(--color-main);
   animation-name: colorfulltitle;
-  animation-duration: 10s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes colorfulltitle {
-  0%
+  0% {
+    color: var(--color-main);
+  }
+
+  50% {
+    color: var(--color-third);
+  }
+
+  100% {
+    color: var(--color-main);
+  }
 }
 
 section h2 {
@@ -262,6 +274,7 @@ article div {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-grow: 1;
 }
 
 /* for the footer */
