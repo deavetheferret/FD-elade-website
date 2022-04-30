@@ -9,12 +9,15 @@
   roc-grotesk-condensed, sans-serif
   roc-grotesk-wide, sans-serif
   roc-grotesk-extrawide, sans-serif
+  #fff8f8
+  #150303
+  #be4545
  */
 
 :root {
-  --color-main: #fff8f8;
-  --color-secondary: #150303;
-  --color-third: #be4545;
+  --color-main: #fff;
+  --color-secondary: #000;
+  --color-third: #aaa;
   --font-main: roc-grotesk, sans-serif;
   --font-secondary: roc-grotesk-wide, sans-serif;
   --page-title-size: 70px;
@@ -183,6 +186,7 @@ body {
   section::-webkit-scrollbar {
     background: var(--color-main);
     border: solid 2px var(--color-secondary);
+    height: 0;
   }
   
   section::-webkit-scrollbar-thumb {
